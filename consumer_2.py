@@ -13,7 +13,7 @@ url = os.environ.get('CLOUDAMQP_URL', 'amqp://guest:guest@localhost:5672/%2f')
 params = pika.URLParameters(url)
 connection = pika.BlockingConnection(params)
 channel = connection.channel() # start a channel
-channel.queue_declare(queue='testq') # Declare a queue
+channel.queue_declare(queue='testq', durable=True) # Declare a queue
 
 # create a function which is called on incoming messages
 def callback(ch, method, properties, body):
