@@ -1,4 +1,11 @@
 # rabbitmq_test
+
+Pre-requisites:
+
+Get URL for test rabbitMQ instance. Free instance can be created from below website..
+
+https://customer.cloudamqp.com/instance
+
 clone https://github.com/imsrv01/rabbitmq_test.git
 
 cd rabbitmq_test
